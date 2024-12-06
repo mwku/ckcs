@@ -6,7 +6,7 @@ flask 如果沒有安裝過請在終端機輸入 pip install flask
  * Serving Flask app 'main'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on https://127.0.0.1:5000 # 這裡
+ * Running on https://127.0.0.1:5000
 Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
