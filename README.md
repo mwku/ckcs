@@ -21,4 +21,4 @@ Press CTRL+C to quit
 * /practice/<webname> : 搶票練習 #預計不會做
 * /captcha/<webname> : 驗證碼練習 #預計不會做
 # 待完成
-提供 /practice 範本
+提供 /practice 範本 (主頁第三區)
