@@ -12,13 +12,13 @@ Press CTRL+C to quit
  * Debugger is active!
  * Debugger PIN: 130-870-665
 # 路由
-/ : 主頁
-/about : 關於我們
-/log-in : 登入
-/sign-up : 註冊
-/verify : 註冊後驗證帳號的路由 #未完成
-/admin : 後台 #目前只有登入
-/practice/<webname> : 搶票練習 #預計不會做
-/captcha/<webname> : 驗證碼練習 #預計不會做
+* / : 主頁
+* /about : 關於我們
+* /log-in : 登入
+* /sign-up : 註冊
+* /verify : 註冊後驗證帳號的路由 #未完成
+* /admin : 後台 #目前只有登入
+* /practice/<webname> : 搶票練習 #預計不會做
+* /captcha/<webname> : 驗證碼練習 #預計不會做
 # 待完成
 提供 /practice 範本
