@@ -120,7 +120,7 @@ def admin():
 
 @app.route('/captcha_img', methods=['POST'])
 def captcha_img():
-    return jsonify({"url_": f"/static/img/captcha/captcha{random.randint(10, 100)}.svg"})
+    return jsonify({"url_": f"/static/img/captcha/captcha{random.randint(10, 31)}.svg"})
 
 
 @app.route('/admin_login', methods=['POST'])
