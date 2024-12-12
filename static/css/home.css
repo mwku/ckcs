@@ -1,0 +1,212 @@
+
+.area-limit{
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-area{
+    width: 1250px;
+    height: 225px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #fff;
+    border: 5px #eee;
+    margin-top: 130px;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    position: relative;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+.top-area h1{
+    position: absolute;
+    top :50px;
+}
+.top-area h2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 100px;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.announcement {
+    display: none;
+    height: 50px;
+    overflow: hidden;
+}
+
+.announcement.active {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-up 5s ease-in-out;
+    /* animation-duration: 0ms; */
+}
+.top-area hr{
+    border: none;
+    height: 2px;
+    background-color: #333; 
+    width: 1000px;
+    margin-top:0; 
+}
+.captcha-area{
+    width: 1250px;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    background-color: #fff;
+    border: 5px #eee;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+.captcha-area h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.box-area{
+    flex-wrap: wrap;
+    display: flex;
+    width: 1250px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-box{
+    /* margin-left: 31px;
+    margin-right: 20px; */
+    margin: 20px;
+    margin-top: 0px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 300px;
+    width: 350px;
+    border: 3px solid #eee;
+}
+
+.select-box:hover{
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #eee;
+}
+
+.select-box img{
+    height: 250px;
+    width: 350px;
+    border-top-left-radius: 12.5px;
+    border-top-right-radius: 12.5px;
+}
+
+.ticketplusCaptcha{
+    pointer-events: none;
+    color: #555;
+}
+.ticketplusCaptcha div{
+    position: relative;
+}
+.disabled-text{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    color: #555;
+    text-align: center;
+}
+.practice-area{
+    width: 1250px;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    background-color: #fff;
+    border: 5px #eee;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+.practice-area h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.template-area{
+    width: 1250px;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    background-color: #fff;
+    border: 5px #eee;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+}
+.template-area h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media(max-width: 1250px){
+    .captcha-area,
+    .practice-area {
+        /* width: 90%; */
+        margin: 50 auto;
+        padding: 0;
+    }
+}
+
+/* @media (width: 1250px) {
+    .box-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-area{
+        width: 375.39px;
+    }
+    .select-box{
+        margin: 10px;
+    }
+    .captcha-area{
+        padding: 0px;
+    }
+    .practice-area{
+        padding: 0px;
+    }
+
+} */

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ticket Champion是一個提供驗證碼練習與搶票練習的網站，讓使用者可以練習驗證碼的輸入，以及搶票的流程，提升搶票的成功率。">
+    <meta name="keywords" content="Ticket Champion,搶票,驗證碼,練習,kktix,ticket plus,遠大,tixcraft,拓元">
+    <title>Ticket Champion</title>
+    <link rel="icon" href="/static/img/logo.png">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/template.css">
+    <script src="/static/js/home.js"></script>
+    <script src="/static/js/template.js"></script>
+</head>
+
+<body class="bigger">
+
+    <header class="top-header">
+        <div class="limit">
+            <a href="/"><img src="static/img/logo.png" class="logo"></a>
+            <ul class="top-list">
+                <li>
+                    <a href="about">
+                        關於我們
+                    </a>
+                </li>
+                <li>
+                    <a href="help_us">
+                        幫助我們
+                    </a>
+                </li>
+                <li>
+                    <a href="qa">
+                        Q&A
+                    </a>
+                </li>
+                <li id="dropdown" class="dropdown-li">
+                    <button id="account-button">帳號</button>
+                    <ul class="dropdown-content" id="dropdown-content">
+                        <li>
+                            <a href="log-in" id="log-in">
+                                登入
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sign-up" id="sign-up">
+                                註冊
+                            </a>
+                        </li>
+                        <li>
+                            <button id="log-out">
+                                登出
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- <header class="top-header">
+        <div class="limit">
+            <a href="/"><img src="static/img/logo.png" class="logo"></a>
+            <ul class="top-list">
+                <li>
+                    <a href="about">關於我們</a>
+                </li>
+                <li>
+                    <a href="help_us">幫助我們</a>
+                </li>
+                <li>
+                    <a href="qa">Q&A</a>
+                </li>
+                <li id="dropdown" class="dropdown-li">
+                    <button id="account-button">帳號</button>
+                    <ul class="dropdown-content" id="dropdown-content">
+                        <li><a href="profile">個人資料</a></li>
+                        <li><a href="logout">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="dropdown-button" id="menu-button">選單</button>
+            <div class="dropdown-menu" id="menu-dropdown">
+                <a href="about">關於我們</a>
+                <a href="help_us">幫助我們</a>
+                <a href="qa">Q&A</a>
+                <a href="profile">個人資料</a>
+                <a href="logout">登出</a>
+            </div>
+        </div>
+    </header> -->
+    <div class="b">
+        <div class="area-limit">
+            <div class="top-area">
+                <h1>公告</h1>
+                <div id="announcement" class="announcement">Loading...</div>
+            </div>
+            <div class="captcha-area">
+                <h1>驗證碼練習</h1>
+                <!-- <ul>
+                <li> -->
+                <div class="box-area">
+                    <a href="captcha/kktix">
+                        <div class="select-box">
+                            <img src="/static/img/kktix_captcha.png">
+                            <h3>kktix驗證碼練習</h3>
+                        </div>
+                    </a>
+                    <a href="captcha/ticketplus" class="ticketplusCaptcha">
+                        <div class="select-box">
+                            <img src="/static/img/ticketplus_captcha.svg" style="filter: grayscale(53%);">
+                            <h3>ticketplus驗證碼練習</h3>
+                            <h3 class="disabled-text">遠大已於2024/6/9關閉驗證系統</h3>
+                        </div>
+                    </a>
+                    <a href="captcha/tixcraft">
+                        <div class="select-box">
+                            <img src="/static/img/tixcraft_captcha.png">
+                            <h3>tixcraft驗證碼練習</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- </li>
+            </ul> -->
+            </div>
+            <div class="practice-area">
+                <h1>搶票練習</h1>
+                <!-- <ul>
+                <li> -->
+                <div class="box-area">
+                    <a href="practice/kktix">
+                        <div class="select-box">
+                            <img src="/static/img/kktix_logo.png">
+                            <h3>kktix搶票練習</h3>
+                        </div>
+                    </a>
+                    <a href="practice/ticketplus">
+                        <div class="select-box">
+                            <img src="/static/img/ticketplus_logo.png">
+                            <h3>ticketplus搶票練習</h3>
+                        </div>
+                    </a>
+                    <a href="practice/tixcraft">
+                        <div class="select-box">
+                            <img src="/static/img/tixcraft_logo.png">
+                            <h3>tixcraft搶票練習</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- </li>
+            </ul> -->
+            </div>
+            <div class="template-area">
+                <h1>提供範本</h1>
+                <!-- <ul>
+                <li> -->
+                <div class="box-area">
+                    <a href="template/kktix">
+                        <div class="select-box">
+                            <img src="/static/img/kktix_logo.png">
+                            <h3>kktix搶票範本</h3>
+                        </div>
+                    </a>
+                    <a href="template/ticketplus">
+                        <div class="select-box">
+                            <img src="/static/img/ticketplus_logo.png">
+                            <h3>ticketplus搶票範本</h3>
+                        </div>
+                    </a>
+                    <a href="template/tixcraft">
+                        <div class="select-box">
+                            <img src="/static/img/tixcraft_logo.png">
+                            <h3>tixcraft搶票範本</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- </li>
+            </ul> -->
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-limit">
+            <img src="/static/img/logo.png">
+            <ul class="about-ul">
+                <li><a href="https://instergram.com.tw">ig</a></li>
+                <li><a href="https://facebook.com.tw">fb</a></li>
+                <li><a href="/mail">email</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="least">
+        <p></p>
+    </div>
+
+</body>
+
+</html>
