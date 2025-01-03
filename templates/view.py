@@ -97,9 +97,11 @@ def log_out():
 def verify_page():
     return render_template('verify.html')
 
-@app.route('/template/tixcraft')
-def abc():
-    return render_template('abc.html')
+
+@app.route('/template/kktix')
+def t_k():
+    return render_template('template1.html')
+
 
 @app.route('/verify_data', methods=['POST'])
 def verify():
