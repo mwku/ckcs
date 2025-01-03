@@ -97,9 +97,10 @@ def log_out():
 def verify_page():
     return render_template('verify.html')
 
-@app.route('/template/tixcraft')
-def abc():
-    return render_template('abc.html')
+@app.route('/template/ticketplus')
+def a():
+    return render_template('ticketplus2.html')
+
 
 @app.route('/verify_data', methods=['POST'])
 def verify():
@@ -171,7 +172,7 @@ def practice_k():
 
 @app.route('/practice/ticketplus')
 def practice_tp():
-    if request.get_data('template'):
+    if request.get_data('template.html'):
         return render_template('ticketplus_p.html')
     else:
         return render_template('load.html')
