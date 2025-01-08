@@ -1,0 +1,284 @@
+/* body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x:auto;
+} */
+body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: center;
+}
+/* .limit{
+    width:1250px ;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+} */
+.limit {
+    max-width: 1250px; /* 添加 max-width */
+    width: 100%;        /* 設置寬度為 100% */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .about-limit{
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.about-limit {
+    max-width: 1250px; /* 添加 max-width */
+    width: 100%;        /* 設置寬度為 100% */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+/* .top-header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+} */
+.limit a{
+    width: 100px;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.limit a:hover{
+    background-color: #eee;
+}
+.top-list{
+    display: flex;
+}
+.top-list li a,.top-list li button{
+    border: none;
+    display: flex;
+    margin: 0 10px;
+    background-color: #fff;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.top-list li a:hover,.top-list li button:hover{
+    background-color: #eee;
+}
+.dropdown-li{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    max-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-content li{
+    background-color: #fff;
+    color: black;
+    width: 100px;
+    z-index: 1001;
+    margin: 0;
+}.dropdown-content li:hover{
+    background-color: #eee;
+}
+
+.logo{
+    /* margin-left: 100px; */
+    width: 70px;
+    height: 70px;
+}
+
+.about{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about div img{
+    width: 200px;
+    height: 200px;
+}
+.about-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-ul li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+}
+.about-ul li a{
+    font-size: 20px;
+}
+.least{
+    width: 100%;
+    height: 70px;
+    background-color: #555;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.b{ /*background-color:#fff;*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    /* background-color:black; */
+}
+@media(max-width: 1000px){
+    .limit{
+        min-width: 950px;
+    }
+    .top-header{
+        min-width: 1000px;
+    }
+    .about-limit{
+        min-width: 960px;
+    }
+    .about{
+        min-width: 1000px;
+    } 
+    .least{
+        min-width: 1000px;
+    }
+    body{
+        justify-content: flex-start;
+    }
+}
+@media(max-width: 1300px){
+    .bigger .top-header,
+    .bigger .about,
+    .bigger .least,
+    .bigger .b{
+        min-width: 1300px;
+    }
+    .bigger .about-limit,
+    .bigger .limit{
+        min-width: 1250px;
+    }
+}
+.buttom{ /*background-color:#fff;*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+   /* display: flex;*/
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: auto;
+    padding:100px;
+    border-style: hidden;
+    border-radius: 10px;
+}
+#h{ text-align: center;
+    text-size-adjust: 10px;
+    padding: 20px;
+    background-color: rgb(215, 248, 250);
+    border-radius: 20px;
+    border-style: hidden;} 
+#u{ text-align: center;
+ text-size-adjust: 10px;
+padding: 20px;
+background-color: rgb(139, 143, 183);
+ border-radius: 20px;
+       border-style: hidden; }
+#h:hover{text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-size-adjust: 10px;
+    padding: 20px;
+    background-color: rgb(215, 248, 250);
+    border-radius: 20px;
+    border-style:dotted;
+    border-color:orangered;}
+#u:hover{ text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-size-adjust: 10px;
+   padding: 20px;
+   background-color: rgb(139, 143, 183);
+    border-radius: 20px;
+          border-style:dotted;
+        border-color:orangered;}
+.time{ text-align: center;
+    text-size-adjust: 10px;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color:cornsilk;
+    border-radius: 20px;
+border-style: hidden;}
+.time:hover{text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-size-adjust: 10px;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background-color:cornsilk;
+    border-radius: 20px;
+    border-style:dotted;
+    border-color:orangered;}
