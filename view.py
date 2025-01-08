@@ -175,9 +175,9 @@ def practice_k():
 
 
 @app.route('/practice/ticketplus')
-def practice_tp():
+def a():
     if request.get_data('template'):
-        return render_template('ticketplus_p.html')
+        return render_template('t_tp.html')
     else:
         return render_template('load.html')
 
