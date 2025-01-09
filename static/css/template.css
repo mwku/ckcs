@@ -224,6 +224,7 @@ ul{
     }
 }
 .buttom{ /*background-color:#fff;*/
+    background-color: #fff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
    /* display: flex;*/
     justify-content: center;
@@ -233,6 +234,7 @@ ul{
     padding:100px;
     border-style: hidden;
     border-radius: 10px;
+    margin-top: 100px;
 }
 #h{ text-align: center;
     text-size-adjust: 10px;
@@ -282,3 +284,15 @@ border-style: hidden;}
     border-radius: 20px;
     border-style:dotted;
     border-color:orangered;}
+/*.sf{text-align: center;
+padding: 0px;}
+.sf:hover{text-align: center;
+border-style: dotted;
+border-color: orangered;
+padding: 0px;}
+.sb{text-align: center;
+    padding: 0px;}
+.sb:hover{text-align: center;
+    border-style: dotted;
+    border-color: orangered;
+padding: 0px;}*/
